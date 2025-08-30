@@ -47,11 +47,17 @@ while ans == "Y" :
                                    elif l[0]==l[1]==l[2]=='O' or l[3]==l[4]==l[5]=='O' or l[6]==l[7]==l[8]=='O':     #for O rows
                                                                                                          print(p2,"win")      
                                                                                                          break
-                                   elif l[2]==l[4]==l[6] in s or l[0]==l[4]==l[8] in s:                            #for diagonals
-                                                                                     print("You win")         
+                                   elif l[2]==l[4]==l[6]=='X'  or l[0]==l[4]==l[8]=='X':                            #for X diagonals
+                                                                                     print(p1,"win")         
                                                                                      break
-                                   elif l[0]==l[3]==l[6] in s or l[1]==l[4]==l[7] in s or l[2]==l[5]==l[8] in s:    #for columns
-                                                                                                         print("You win")      
+                                   elif l[2]==l[4]==l[6]=='O'  or l[0]==l[4]==l[8]=='O':                            #for O diagonals
+                                                                                     print(p2,"win")         
+                                                                                     break
+                                   elif l[0]==l[3]==l[6]=='X' or l[1]==l[4]==l[7]=='X' or l[2]==l[5]==l[8]=='X':    #for X columns
+                                                                                                         print(p1,"win")      
+                                                                                                         break
+                                   elif l[0]==l[3]==l[6]=='O' or l[1]==l[4]==l[7]=='O' or l[2]==l[5]==l[8]=='O':    #for O columns
+                                                                                                         print(p2,"win")      
                                                                                                          break
                                    else:                                      
                                                             #alternating values evenodd method
@@ -95,3 +101,4 @@ print("GAME CLOSED")
 
                          
                                               
+
