@@ -3,15 +3,21 @@ def capitalizer() :
     ch = ""
     c3 = ""
     var = "n"
-    for char in sent : 
+
+    for char in sent :
         if char == ".":
             var = "n"
+
         elif var == "n":
             b = char.capitalize()
             char = b
             var = "m"
+
         ch += char
+
     for c2 in ch :
-        c3 += c2   
-    print(c3)    
+        c3 += c2
+
+    print(c3)
+
 capitalizer()
