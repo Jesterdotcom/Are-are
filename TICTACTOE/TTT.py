@@ -3,12 +3,13 @@ from display import design
 design()
 
 ans = "Y"
-lft = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # for not overputting
+
 h = "|"
 g = "---------"
 p1 = input("Enter Player 1 name = ")
 p2 = input("Enter Player 2 name = ")
 while ans == "Y":
+    lft = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # for not overputting
     l = [
         " ",
         " ",
@@ -20,7 +21,7 @@ while ans == "Y":
         " ",
         " ",
     ]
-
+     
     # main printing pattern
     print(l[0], h, l[1], h, l[2])
     print(g)
@@ -113,3 +114,4 @@ while ans == "Y":
     ans = input("Type Y for Yes or N for No : ")
 
 print("GAME CLOSED")
+
