@@ -33,7 +33,7 @@ while ans == "Y" or "y":
     n = " "
     s = ["X", "O"]
     t = [p1, p2]
-    print("Player", p1, " will use X and Player", p2, " will use O")
+    print("Player", p1, " will use X and Player", p2, " will use O ")
 
     while n in l:
         if (
