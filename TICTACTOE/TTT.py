@@ -2,13 +2,13 @@ from display import design
 
 design()
 
-ans = "Y"
+ans = "Y" or "y"
 
 h = "|"
 g = "---------"
 p1 = input("Enter Player 1 name = ")
 p2 = input("Enter Player 2 name = ")
-while ans == "Y":
+while ans == "Y" or "y":
     lft = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # for not overputting
     l = [
         " ",
